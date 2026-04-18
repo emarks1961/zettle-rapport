@@ -1,4 +1,4 @@
-# Zettle Verkooprapport – de Fietsboot (Netlify)
+# Zettle Verkooprapport –  de Fietsboot (Netlify)
 
 Beheerpagina om het Zettle verkooprapport wekelijks bij te werken en te e-mailen.
 
