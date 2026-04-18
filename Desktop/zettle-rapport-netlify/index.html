@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zettle Verkooprapport – de Fietsboot</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,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">
+  <meta property="og:image" content="data:image/webp;base64,UklGRuIKAABXRUJQVlA4INYKAABQMQCdASrAAMAAPlEokEYjoqGhIviZSHAKCU3cBgeuHKcFew+c+/Lj+V/qT16XReLPyE5N8szlLxy/2b2AflL2B/1U6UH7KfiB8AP53/Xv2U91//H/rX7i/2H9gD+Xf4PrJPQG/Zb0t/3L+Db9tP27+BX9lv/jrKChvhj4XfI3tJoDfPV73+VnIbwAvxv+Rf5XevQB/UX/S/ll5wX8t6C96H+jf6njBqAH8s/r/oE/9vlu+m/1++A/+cf2r/m/bh39/RfFrYugMmKi/xk2yxWBywTfYNERE9eVu5tNAhB4mozj10FDl7I0CBbWDrXOSqspDjbl8HaBAE+Xj5Xolm4u4BQCRzKrLCUdBJVX+dO0oKaf8zqWGux8Yay0UG1EHEg2BHT+YQQjkMX+XTvAh0VujW7DGhh8DzDHM1WCnqrrEHZAARgOTz8E3UbDhIQOU6/qF8e8EtbzY2TZkelWhaP5q4ZcqltpUX5tgqB6wKi/NHKo50d+Ifmy6kyZk4IYDuqdUVftHY6rzDLfSKpbVIkJCSMgAP7ur6yf9sRZVtx77m//1Il/a2x8gUVtxKjZ88UzJ83iqqTQZgQyaDlHo6aYHc2jjlkJUu6iQteU8p4ucXnTRS2uWD4zIHb0jgdSUmEfPnVntOpFpvCw6KI0x7lvX/6Gr8AWrvGGvpjd1qKOMv4p2rIP2odFx7USNH4GHQKvtRFBVHEvtGD50Nwy5FxPSWCvbKllA/kspkDxf1rgv2PYAu6iIZDU4bfMoJXyLbM7RP1tXt4s/pmEnx1ipeq9hKxl4V1jF8uB7Y6/TbDANq5IlLQ90KN36yCJnW9pP/PvXpy2+izs5Y3VaRpZ6rDXes+PhVvwVkAO/ZeS4gYBTNJKuuTQHn8SLm8HRXnAjbBre7qTJUaIP/p+PokKHYed6uWMMwm4oj80TDMoaLZDLx41H8ti2yrM/D3RXv86i1nnhchHj2xTWxwESZWErn9KyUKweJ36gQfab4j7mIWZPA+NF03+/sjLUZNg/yuDIJN9nBncM3wwTsufm3w0+yMwA0GTp1qRbp8MxZcTh4lqHgEFER2dVpiMDVKczflThLqzcAPeCZe3/QC+AqnME6z6kNlQ3b7rc5Z97Y00kDmtMBnXsrbrqJndflj+OqcI3mqfX/3Zy/S44b3s13/knTCy1dW28lztpan3ACvwI34o+lQoiKK1ymXGXjItRxFczZgrD0IPYPnA0wJGHohEeIPgOaS3qvNTTt/cLULfjlhhTsIEhEFAwoUX7y/QDbI534BFBIeNDGCM0YtxrXXTJd7mWylyMzN0rRV+387Ga7Rv8gDJNzhT8OiiuoMUIhiZAtztJV8ZCo9fg/7oZ3MLI3ZoqZv7aob5Vrn5odi0pknGfSF2Urlk0+qzhPPC3/eb10P1436SRAPr/dc3htNicqH79S/YL1T2uwQVfX/o8q9eyOL9bf0F4npI8GWjU3MH2meqq1Q+xO+c4jMt5JTfdOVskjGoPuji5s1kKHbS9pq5Wl1OwD91YE/dZg929+/idVmUKzVlHarOmSBjxgpRzZ71IfbrveNYvDq2n6+vnn/kyFQsF/uLqSggpYhI+8PpBq4S6yvRxGJ+WsXmj+yAaAMHzVA8Nd5hJAw871YqlwZaP7U/Mul1X3m1XKKXaUraUDlgmxJYqqMsWszOe3CJeQZtXnIJJiA6g1neeI9JttX/uYE8KZEyUrrR8xrmgsjr9pg0EtFRky1MXf2C7ixI0RXe7aU839g7rvjKsISlUd0PFBqJtPr4XNDb5He2xx3KaSE7XxSTuW5WfgbpP/Y01iQuEVsv+keAv3AxBql8a9TIFnnuOJfWoqSNwDwNWFzXndBC46T9vbJnhiQTR/zI/ITPmXjaJ0mfZGovvWbDVt9E1jD9CACnuKlRxRRO42uNZNgi54SuhJ25fdVcQODx/LGwYgwEHUaYKbp2Ft1xNsRvEUzkf2yCSwBIRudQ6coOOgUovgCdCdXwdMK3BrZhwcJmlUMdXjLrcXc5oA7CR9Est6q0KecRsAw1uvuWQCeN5snKrs1j5xrjpXYcDGk/oK03pdiviApMxH3yasAoRR7z3GhaUT61a9A4VhrreOobnbjtxKxfRivoDjSbx61ETVVnz81ympJhoDD1QpsR5wRUVobruJqlBkPnQVPkZ7ph8VbJ5VgcSFPquW7wfqFKTYEdOPZQmf/0xve55b/hhmnqUPvgqwRXmoUeVj0+0Qz/txA81u3x6jGfDmpJ1feW6OvoJE+G/A+bTglcSTYW0aIYyKg2gkP0qcGMebNW0P/ApX/gRjvgYHuBDvUW4nRl+diTylvV7LAIkTXPqDAFML31OBsQSHF6KPfDFkF6wzFQ/EGR7Ap0sO8vouDwXpjs1RIqfK+3mmt9+paBe5N4M/5Qbo3K3Y7aFA0kNKIxqmXNGsf5izkK/22FmJ4ipTIzv/LUzF6fbm2gPR4Oj8SKCmlJNWS/NnwKOu3OciKWuDwc7yd1gEmBkT9GimEzdEEPlg6XOWemX7SnTBw+vp2MIui/d5Ui+imQ4MkCwvdPR19v68Vq7ScwSBgH+paS65ij1DhrburKzT9zDxtFxVvrh+gJ5mS4bT6TcrR5BAG9YHhjwGynLftr8pz2jP0+n9GXrHES+jz30vMP+pM9lWtWwwo/pbF0cAsLr8RiFPmdxjazH7UrZ8q/L7SsyE4R8SP5SpBLx8y8JvG8L4m2U6z9gdTLr7n1/KOlf9U8xp0svCwmUGxLpUMSN91WYwuisUFKc78szzypyM9HOhoWdgMP4LAaIyFbwHw63PTFeD1Js7+ltjdlAZVC/x07YHiumLbnr+5ncrV8v7I/qOACJyHSg5ZPrAteKIesLjOkllT7yPOdWBugddiuO9TY6Elz8QPOOOctBWW2OZJrrnrHO/J18ltNqDNwtglPFRQ0gLDhJbhwqujTPZVOHNDuGA7qyLIJUijg9PCByoWUfEs8QZdr+n3rKJ6tsa1l2sU8Rey/ws4NqUp+/EpVcI2svkaV2jxBdfsT5v5HmeZ+EZqYOLrucgu8f6n/kSg5slf9VO4/sMPh6i+wXyt0iYNBZ9TD5IGPglrmFJ4F7/Kg03yCYvbJxdcycWtt/esYSEpBUXq0gGxLOB5UAvB2fxiFGbECb0sCcfKq9w5WVLAUWotwcXo2r/0ErNijFfC5eyz8CL5/9DjDt5d0mWdYMGFCfJSQ/ePlvedtpY/h0ZWB9yD7l1aH23qnEM/xKJsEv8rFizouCTTEJ6w6FCdzxk4SRxBMWDdeFD+s6n13sYxg5BFVgxz+C6SYx7swrQhe4vB3z2WRsYhQvswJTjIwAh5/3v2uC0RY4+7DaNZaAEkKhpRgf96Bja/fTTM7g1orf0wXCmeXUQGgH2AwPgIL6oto8e3fc9dVW8qIA6jRaVeUvX8V2kdYUjUnnQQ40Jm1aelO0zUlaqCzA79Rt88MTbh/nLd6AK7exnvQQUMYCnNd9AYq+1pFBdXkTXXRJZYPsRPRF+0ZWs3MO0gffVs35KFc3rSawG7f0sMLDC/d3b4JwbRVmrCHCm8RXzpwaq7qM7eSzugnmX7rhaguPSVMTTCrwYDhEOYkYdZ5BqDqcYaNdABx7+BKisbfor1uRjL3lUfmK4nb3mFt/sh5uL4JE5rIOOOpRvdKaYNfm4hsxVtDkBJoJ6TTdTkxGCmAStoAAA==" />
+  <meta name="twitter:image" content="data:image/webp;base64,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" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --accent:       #008AD1;
+      --accent-dark:  #006EA8;
+      --accent-light: #CCE9F7;
+      --accent-lichtst: #E6F3FB;
+      --bg:           #F0F8FD;
+      --card:         #ffffff;
+      --border:       #CCE9F7;
+      --text:         #1a1d23;
+      --text-2:       #5a6070;
+      --text-3:       #9aa0ad;
+      --ok-bg:        #edfaf3;
+      --ok:           #1a7f4b;
+      --err-bg:       #fef2f2;
+      --err:          #c0392b;
+      --r:            10px;
+      --rl:           16px;
+      --shadow:       0 1px 3px rgba(0,0,0,.08), 0 4px 16px rgba(31,78,121,.12);
+      --blauw:        #006EA8;
+      --middelblauw:  #008AD1;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    /* ── Header ── */
+    .header {
+      background: linear-gradient(135deg, #006EA8 0%, #008AD1 100%);
+      color: white;
+      padding: 18px 32px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .header-icon {
+      font-size: 28px;
+      width: 46px; height: 46px;
+      background: rgba(255,255,255,.12);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .header h1 { font-size: 1.15rem; font-weight: 700; line-height: 1.2; }
+    .header p  { font-size: 0.8rem; opacity: .7; margin-top: 2px; }
+
+    /* ── Layout ── */
+    .wrap {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 36px 24px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* ── Card ── */
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--rl);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .card-head {
+      padding: 18px 24px 0;
+    }
+    .card-head h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--blauw);
+      margin-bottom: 4px;
+    }
+    .card-head p {
+      font-size: 0.84rem;
+      color: var(--text-2);
+      line-height: 1.5;
+    }
+    .card-body {
+      padding: 20px 24px 24px;
+    }
+
+    /* ── Periode chips ── */
+    .chips {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+    .chip {
+      padding: 6px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: 20px;
+      background: var(--card);
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--blauw);
+      cursor: pointer;
+      transition: all .15s;
+    }
+    .chip:hover { border-color: var(--accent); color: var(--accent); }
+    .chip.on { background: linear-gradient(135deg, #006EA8 0%, #008AD1 100%); color: white; border-color: var(--blauw); }
+
+    /* ── Formulier rijen ── */
+    .row2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .veld label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--blauw);
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .veld input[type="date"],
+    .veld input[type="email"],
+    .veld select {
+      width: 100%;
+      padding: 10px 13px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--r);
+      font-family: inherit;
+      font-size: 0.92rem;
+      color: var(--text);
+      background: var(--bg);
+      outline: none;
+      transition: border-color .15s;
+      appearance: none;
+    }
+    .veld input:focus,
+    .veld select:focus { border-color: var(--accent); background: white; }
+
+    /* Ontvanger selector */
+    .ontvanger-wrap { margin-bottom: 22px; }
+    .ontvanger-opties {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .ontvanger-opt {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 12px 16px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--r);
+      cursor: pointer;
+      transition: all .15s;
+      background: var(--bg);
+    }
+    .ontvanger-opt:hover { border-color: var(--accent); background: var(--accent-light); }
+    .ontvanger-opt.on   { border-color: #006EA8; background: #E6F3FB; }
+    .ontvanger-opt input[type="radio"] { display: none; }
+    .ontvanger-dot {
+      width: 18px; height: 18px;
+      border: 2px solid var(--border);
+      border-radius: 50%;
+      flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      transition: all .15s;
+    }
+    .ontvanger-opt.on .ontvanger-dot {
+      border-color: var(--blauw);
+      background: linear-gradient(135deg, #006EA8 0%, #008AD1 100%);
+    }
+    .ontvanger-opt.on .ontvanger-dot::after {
+      content: '';
+      width: 7px; height: 7px;
+      background: white;
+      border-radius: 50%;
+    }
+    .ontvanger-naam { font-weight: 600; font-size: 0.9rem; }
+    .ontvanger-email { font-size: 0.8rem; color: var(--text-2); }
+
+    /* Aangepast e-mailadres veld */
+    #anderVeld { display: none; margin-top: 10px; }
+
+    /* ── Actieknop ── */
+    .btn-run {
+      width: 100%;
+      padding: 14px 20px;
+      background: linear-gradient(135deg, #006EA8 0%, #008AD1 100%);
+      color: white;
+      border: none;
+      border-radius: var(--r);
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: background .15s, transform .1s;
+    }
+    .btn-run:hover:not(:disabled) { background: linear-gradient(135deg, #005A8F, #007CBD); }
+    .btn-run:active:not(:disabled) { transform: scale(.98); }
+    .btn-run:disabled { background: #92a8be; cursor: not-allowed; }
+
+    .spin {
+      width: 20px; height: 20px;
+      border: 3px solid rgba(255,255,255,.35);
+      border-top-color: white;
+      border-radius: 50%;
+      animation: s .7s linear infinite;
+      display: none;
+      flex-shrink: 0;
+    }
+    @keyframes s { to { transform: rotate(360deg); } }
+
+    /* ── Status melding ── */
+    .melding {
+      display: none;
+      margin-top: 16px;
+      padding: 14px 18px;
+      border-radius: var(--r);
+      font-size: 0.88rem;
+      font-weight: 500;
+      border-left: 4px solid;
+      line-height: 1.5;
+    }
+    .melding.ok  { background: var(--ok-bg);  border-color: var(--ok);  color: var(--ok); }
+    .melding.err { background: var(--err-bg); border-color: var(--err); color: var(--err); }
+
+    /* ── Resultaat kaartjes ── */
+    .kpis {
+      display: none;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .kpi {
+      background: var(--accent-light);
+      border-radius: var(--r);
+      padding: 14px 16px;
+    }
+    .kpi .lbl { font-size: 0.72rem; text-transform: uppercase; letter-spacing: .05em; color: var(--text-2); font-weight: 600; margin-bottom: 4px; }
+    .kpi .val { font-size: 1.25rem; font-weight: 700; color: var(--blauw); }
+
+    /* ── Info lijst ── */
+    .info-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .info-list li {
+      display: flex; gap: 10px;
+      font-size: 0.86rem; color: var(--text-2); line-height: 1.45;
+    }
+    .info-list li::before { content: '→'; color: #008AD1; font-weight: 700; flex-shrink: 0; }
+
+    code {
+      background: #eef3f8;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.81rem;
+      color: var(--blauw);
+    }
+
+    @media (max-width: 500px) {
+      .row2 { grid-template-columns: 1fr; }
+      .kpis { grid-template-columns: 1fr 1fr; }
+      .wrap { padding: 20px 14px 0; }
+      .header { padding: 14px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-icon"><img src="data:image/webp;base64,UklGRi4FAABXRUJQVlA4ICIFAADwGwCdASpYAFgAPjEYikOiIaERzAVgIAMEoDsB4YM3+5aul0n8meUd3OM2utf8/0gPtV9SrpAeYD9UP1w9mb1AegB+qPWAegB+tPpW/th8EX7Oful8A/7Nf/CnOvcvyKya70D8mfyV1En9oyUf4z/bPte1xn8Y/u35h67z/d/1H1cP8Dy+/KP+p+1X7BP5B/N/8x/Xf3p7xHoe/sgTGLqlxCszKDGsFHg95WG32u6or/UrhBqtTCKUv9cbYS+jEMUhJEHMRSh190GLAX86QSjXrKFdzg/k2Z9iDIZbIfo+VTZw2CHSkmAAAP7wxAvzID8yA/MgP5kB/e7X3dr7u19+EoaLA3SjgZZor/z42HaGUd7MKsqBiW6Cd1hTdGSqJ537vxv9mrVbB5qLQKMrNyAKKJoO5kHCoztqE2NJwNxVSiM0DiWcafXF5TshqSH3/Eh4Pz9z3946+mUl0Q8mnHfEnnsoAlNcpY/C0WLxeX8zaq7SO6BuKVIx7BB+K5luDSj5bNzTaPanugwf9xEu2gNWTVNmdNLo3sXVR1J/yO81uI/4/SZo5M6Mv8acyzU9W4d/2eUylvYn9TgVPHqUFk8Ce+Ih+zCHdhd+3/UhnIo3kink1HdIisb3ufNqZfKswcYP//jsJSAbgxK3ArmAkIuMJvLIv5l8cJbs05asq1GpuZXbf34qNzhwbymu2hXKLz0jPpSQt2ntHsnhrJ+xDTWV0Kw8Ei/l3+/hi/jKF/m4+PM3ql6OML/it9shFpicOdtcct4xc3O9CydS//jprRzgB9PvhZ0Vv8Yq+FlK1uCUUrNqz+mlPCJNBE9fSYp83Cnq43m6O0NggiEZW0ac9ILHYvk+QPwp3GQ4XHogbghsDiZN5QTzK09GrtBPEslkO/Jvd0+tJcq88pUmM5RuSv/JUIbFgQ/SlWRTgfBqEpkifhnSNNppY9NlITPE5iRUykpfjCndvSoZ8xBMauEjRLy6WayOWBguyjwxI0SV+yiMy0Ea05bXlbF24Sfe/TP7IREZkPiJu0LCEdehxJjvm0PU3eCKzR6Tr5/H9Aul8Ze8T9gDtixLYMzSAQHZC3/f2ba+UoC6PIf0X6l/zXPP/e9/REfV2n6TwpFfz1y6d5/jO7vYERolfGkH9j+KYebQXdyV9uqffeiL0dT6BXQzbI1g4PwsTf/gTv3Ac5F6fI5B5OZZ10bIMadac7AHszrrdkcsk21cW4mIPIuvbXb4QVuR1ce5Jr2+XoUmCEHF67RRf/De407K6p6Os7F8eqG2XyJdyZJ2f75Q4XAhIJeeBMRZ2UiQ7SDfn/i2iZvi9i5G8cy9nOIeQg+7U/ypdgVAaCX19DwtHfr+1nGGgQ0QcD3CSBHwq7IwUO30Y6WVRNZhbIwwEPwWVzmudhbR/fU1KjCzKD+j4aPYLrNYrMPn1L3KK7d4aUUf7NnteSiB73sp4YExC54WB+fRcG0IZFl/+5m672eErocBgas3gpEVbRTlKahf2Q4ftbnpESf+tgHoT+qc0kmSHVRf/9abJk0Us8tbyv4gJXKiU2WXu/lJGv/06+8jvF1dkbkjlKSdo18jPQrP1un1Wfi3sOWD0iRAEpQ49tO71BQ6BPWH8yRjXrfFxz5I/1wzbLjv+5cWAkTNX/Im1Fpf4Zbr8oztMeQ/WDnnWWNm9X6+bQ0/WzQKIvtU38AiCKHkoD49iine8q2tLlQV0wlIki94hAlxxxRVkkP48uZ3zvQd3UJzWcoU73EAAAA=" alt="de Fietsboot" style="width:100%;height:100%;border-radius:8px;object-fit:cover"></div>
+  <div>
+    <h1>Zettle Verkooprapport</h1>
+    <p>de Fietsboot – automatische rapportage</p>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- ── Rapport bijwerken ── -->
+  <div class="card">
+    <div class="card-head">
+      <h2>Rapport bijwerken &amp; verzenden</h2>
+      <p>Kies een periode, selecteer de ontvanger en klik op bijwerken. Het rapport wordt via Zettle opgehaald, als Excel opgeslagen op OneDrive en per e-mail verstuurd.</p>
+    </div>
+    <div class="card-body">
+
+      <!-- Periode chips -->
+      <div class="chips">
+        <button class="chip" onclick="setPeriode('vorige-week', this)">Vorige week</button>
+        <button class="chip" onclick="setPeriode('deze-week', this)">Deze week</button>
+        <button class="chip" onclick="setPeriode('vorige-maand', this)">Vorige maand</button>
+        <button class="chip" onclick="setPeriode('deze-maand', this)">Deze maand</button>
+      </div>
+
+      <!-- Datumvelden -->
+      <div class="row2">
+        <div class="veld">
+          <label>Van</label>
+          <input type="date" id="startDate">
+        </div>
+        <div class="veld">
+          <label>Tot en met</label>
+          <input type="date" id="endDate">
+        </div>
+      </div>
+
+      <!-- Ontvanger -->
+      <div class="ontvanger-wrap">
+        <div class="veld" style="margin-bottom:12px">
+          <label>Rapport verzenden naar</label>
+        </div>
+        <div class="ontvanger-opties" id="ontvangerOpties">
+
+          <label class="ontvanger-opt on" onclick="kiesOntvanger(this, 'eric@defietsboot.nl')">
+            <input type="radio" name="ontvanger" value="eric@defietsboot.nl" checked>
+            <div class="ontvanger-dot"></div>
+            <div>
+              <div class="ontvanger-naam">Eric</div>
+              <div class="ontvanger-email">eric@defietsboot.nl</div>
+            </div>
+          </label>
+
+          <label class="ontvanger-opt" onclick="kiesOntvanger(this, 'bernard@defietsboot.nl')">
+            <input type="radio" name="ontvanger" value="bernard@defietsboot.nl">
+            <div class="ontvanger-dot"></div>
+            <div>
+              <div class="ontvanger-naam">Bernard</div>
+              <div class="ontvanger-email">bernard@defietsboot.nl</div>
+            </div>
+          </label>
+
+          <label class="ontvanger-opt" id="anderOpt" onclick="kiesOntvanger(this, 'ander')">
+            <input type="radio" name="ontvanger" value="ander">
+            <div class="ontvanger-dot"></div>
+            <div>
+              <div class="ontvanger-naam">Ander adres</div>
+              <div class="ontvanger-email">Voer een e-mailadres in</div>
+            </div>
+          </label>
+
+        </div>
+
+        <div id="anderVeld" class="veld">
+          <label>E-mailadres</label>
+          <input type="email" id="anderEmail" placeholder="naam@voorbeeld.nl"
+                 oninput="document.getElementById('anderOpt').querySelector('.ontvanger-email').textContent = this.value || 'Voer een e-mailadres in'">
+        </div>
+      </div>
+
+      <!-- Knop -->
+      <button class="btn-run" id="runBtn" onclick="bijwerken()">
+        <div class="spin" id="spin"></div>
+        <span id="btnTxt">↻ Rapport bijwerken &amp; verzenden</span>
+      </button>
+
+      <!-- Melding -->
+      <div class="melding" id="melding"></div>
+
+      <!-- KPI's -->
+      <div class="kpis" id="kpis">
+        <div class="kpi"><div class="lbl">Totale omzet</div><div class="val" id="k-omzet">–</div></div>
+        <div class="kpi"><div class="lbl">Aankopen</div><div class="val" id="k-aan">–</div></div>
+        <div class="kpi"><div class="lbl">Verzonden naar</div><div class="val" id="k-naar" style="font-size:.82rem;margin-top:3px">–</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── Info ── -->
+  <div class="card">
+    <div class="card-head"><h2>Hoe werkt het?</h2></div>
+    <div class="card-body">
+      <ul class="info-list">
+        <li>Kies een periode met de snelknoppen, of voer begin- en einddatum handmatig in.</li>
+        <li>Selecteer de ontvanger — Eric of Bernard zijn voorgeprogrammeerd, of kies <em>Ander adres</em>.</li>
+        <li>Het rapport wordt opgehaald via de Zettle Purchase API en automatisch als Excel opgebouwd.</li>
+        <li>Het bestand wordt opgeslagen op OneDrive via <code>ZETTLE_RAPPORT_PATH</code> en overschrijft het vorige rapport.</li>
+        <li>De ontvanger krijgt een e-mail met een overzicht in de berichttekst, het Excel-bestand als bijlage én een link naar OneDrive.</li>
+      </ul>
+    </div>
+  </div>
+
+</div><!-- /wrap -->
+
+<script>
+  // ── Actieve ontvanger bijhouden ──────────────────────────
+  let huidigOntvanger = 'eric@defietsboot.nl';
+
+  function kiesOntvanger(el, waarde) {
+    document.querySelectorAll('.ontvanger-opt').forEach(o => o.classList.remove('on'));
+    el.classList.add('on');
+    huidigOntvanger = waarde;
+    document.getElementById('anderVeld').style.display =
+      waarde === 'ander' ? 'block' : 'none';
+  }
+
+  // ── Periode snelknoppen ──────────────────────────────────
+  function isoDate(d) { return d.toISOString().slice(0, 10); }
+
+  function setPeriode(type, el) {
+    document.querySelectorAll('.chip').forEach(c => c.classList.remove('on'));
+    el.classList.add('on');
+    const nu = new Date();
+    const dag = nu.getDay() || 7;
+    let start, end;
+
+    if (type === 'vorige-week') {
+      start = new Date(nu); start.setDate(nu.getDate() - dag - 6);
+      end   = new Date(nu); end.setDate(nu.getDate() - dag);
+    } else if (type === 'deze-week') {
+      start = new Date(nu); start.setDate(nu.getDate() - dag + 1);
+      end   = new Date(nu);
+    } else if (type === 'vorige-maand') {
+      start = new Date(nu.getFullYear(), nu.getMonth() - 1, 1);
+      end   = new Date(nu.getFullYear(), nu.getMonth(), 0);
+    } else if (type === 'deze-maand') {
+      start = new Date(nu.getFullYear(), nu.getMonth(), 1);
+      end   = new Date(nu);
+    }
+    document.getElementById('startDate').value = isoDate(start);
+    document.getElementById('endDate').value   = isoDate(end);
+  }
+
+  // Standaard: vorige week bij laden
+  window.addEventListener('load', () => {
+    document.querySelector('.chip').click();
+  });
+
+  // ── Bijwerken ────────────────────────────────────────────
+  async function bijwerken() {
+    const startDate = document.getElementById('startDate').value;
+    const endDate   = document.getElementById('endDate').value;
+
+    let ontvanger = huidigOntvanger;
+    if (ontvanger === 'ander') {
+      ontvanger = document.getElementById('anderEmail').value.trim();
+      if (!ontvanger || !ontvanger.includes('@')) {
+        toonMelding('Vul een geldig e-mailadres in bij "Ander adres".', 'err');
+        return;
+      }
+    }
+    if (!startDate || !endDate) {
+      toonMelding('Kies eerst een begin- en einddatum.', 'err');
+      return;
+    }
+    if (startDate > endDate) {
+      toonMelding('De begindatum moet vóór de einddatum liggen.', 'err');
+      return;
+    }
+
+    setLaden(true);
+    verbergMelding();
+    document.getElementById('kpis').style.display = 'none';
+
+    try {
+      const res = await fetch('/api/update-rapport', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ startDate, endDate, ontvanger })
+      });
+
+      // Safari-veilig: vang 'Load failed' op
+      const data = await res.json().catch(() => null);
+
+      if (res.ok && data?.ok) {
+        const omzet = data.totaleOmzet?.toFixed(2).replace('.', ',') ?? '–';
+        toonMelding(
+          `✓ Rapport bijgewerkt en verzonden naar ${ontvanger}` +
+          (data.onedriveUrl ? ` — <a href="${data.onedriveUrl}" target="_blank" style="color:inherit">bekijk op OneDrive</a>` : ''),
+          'ok'
+        );
+        document.getElementById('k-omzet').textContent = '€ ' + omzet;
+        document.getElementById('k-aan').textContent   = data.aantalAankopen ?? '–';
+        document.getElementById('k-naar').textContent  = ontvanger;
+        document.getElementById('kpis').style.display  = 'grid';
+      } else {
+        toonMelding('Fout: ' + (data?.fout ?? `HTTP ${res.status}`), 'err');
+      }
+    } catch (err) {
+      if (err.message === 'Load failed' || err.message === 'Failed to fetch') {
+        // Safari brak verbinding af — server is waarschijnlijk bezig
+        toonMelding('De verwerking loopt op de achtergrond. Controleer je e-mail over enkele ogenblikken.', 'ok');
+      } else {
+        toonMelding('Verbindingsfout: ' + err.message, 'err');
+      }
+    }
+
+    setLaden(false);
+  }
+
+  function setLaden(actief) {
+    document.getElementById('runBtn').disabled      = actief;
+    document.getElementById('spin').style.display   = actief ? 'block' : 'none';
+    document.getElementById('btnTxt').textContent   = actief
+      ? 'Bezig met ophalen en verzenden…'
+      : '↻ Rapport bijwerken & verzenden';
+  }
+
+  function toonMelding(html, type) {
+    const el = document.getElementById('melding');
+    el.innerHTML   = html;
+    el.className   = `melding ${type}`;
+    el.style.display = 'block';
+  }
+
+  function verbergMelding() {
+    document.getElementById('melding').style.display = 'none';
+  }
+</script>
+</body>
+</html>
