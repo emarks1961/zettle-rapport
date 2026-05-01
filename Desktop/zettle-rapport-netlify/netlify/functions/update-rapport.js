@@ -1,5 +1,5 @@
 'use strict';
-const { getGraphClient } = require('./shared/graph');
+
 const ExcelJS = require('exceljs');
 
 // ─── Zettle helpers ───────────────────────────────────────────────────────────
@@ -69,6 +69,7 @@ function buildReportData(purchases, startDate, endDate) {
     perStaff[staffName].aantal += (isRefund ? -1 : 1);
 
     for (const item of (p.products || [])) {
+      if (item.category?.name === 'Overig') continue;
       const key = `${item.name}||${item.variantName || '—'}`;
       if (!perProduct[key]) {
         perProduct[key] = { product: item.name, variant: item.variantName || '—', verkocht: 0, geretourneerd: 0, omzet: 0 };
@@ -566,3 +567,25 @@ exports.handler = async (event) => {
     };
   }
 };
+'use strict';
+const { ClientSecretCredential } = require('@azure/identity');
+const { Client } = require('@microsoft/microsoft-graph-client');
+require('isomorphic-fetch');
+
+function getGraphClient() {
+  const credential = new ClientSecretCredential(
+    process.env.GRAPH_TENANT_ID,
+    process.env.GRAPH_CLIENT_ID,
+    process.env.GRAPH_CLIENT_SECRET
+  );
+  return Client.initWithMiddleware({
+    authProvider: {
+      getAccessToken: async () => {
+        const token = await credential.getToken('https://graph.microsoft.com/.default');
+        return token.token;
+      }
+    }
+  });
+}
+
+module.exports = { getGraphClient };
